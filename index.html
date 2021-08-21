@@ -9,7 +9,7 @@
         background-size: cover;
     }
 
-    #main-content {
+    #form-container {
         background-color: lightgrey;
         opacity: 75%;
         width: 30%;
@@ -18,16 +18,26 @@
         padding: 3em;
     }
 
+    header .intro {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 </style>
 
 <html>
-<div id='main-content'>
 
-<head id='header'>
+
+<header id='header'>
     <title>Survey Form</title>
-    <h1 id='title'>How is Aaron as a candidate?</h1>
-    <p id='description'>Thank you for taking the time to help Aaron land a job in tech!</p>
-</head>
+    <div class='intro'>
+        <h1 id='title'>How is Aaron as a candidate?</h1>
+        <p id='description'>Thank you for taking the time to help Aaron land a job in tech!</p>
+    </div>
+</header>
 <body>     
     <div id='form-container'>           
             <form action="/url-where-you-want-to-submit-form-data" id='survey-form' class="survey-form">
@@ -67,5 +77,5 @@
     </div>
 
 </body>
-</div>
+
 </html>
