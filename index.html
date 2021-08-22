@@ -16,12 +16,18 @@
         margin: auto;
         line-height: 200%;
         padding: 3em;
+        border-radius: 10px; 
     }
 
     #container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .intro {
+        line-height: 75%;
+        font-family: helvetica, sans-serif, arial;
     }
 
 </style>
@@ -31,11 +37,11 @@
 <div id='container'>
     <header id='header'>
         <title>Survey Form</title>
+    </header>
         <div class='intro'>
             <h1 id='title'>How is Aaron as a candidate?</h1>
             <p id='description'>Thank you for taking the time to help Aaron land a job in tech!</p>
         </div>
-    </header>
     <body>     
         <div id='form-container'>           
                 <form action="/url-where-you-want-to-submit-form-data" id='survey-form' class="survey-form">
