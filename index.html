@@ -35,6 +35,33 @@
         font-weight: bold;
     }
 
+    input, select {
+        padding: 10px;
+        font-family: helvetica, sans-serif, arial;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type=string] {
+        width: 90%;
+    }
+
+    input[type=email] {
+        width: 90%;
+    }
+
+    input[type=number] {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .dropdown {
+        width: 90%;
+    }
+
 </style>
 
 <html>
@@ -55,7 +82,7 @@
                     <label for='company'>Company <br><input type=string></label><br>
                     <label for='age'>Age <br><input id='number' type="number" min='18' max='99' placeholder='18-99'></label><br>
                         Which Option Best Describes You?<br> 
-                    <select id='dropdown' name='dropdown'>
+                    <select class='dropdown' name='dropdown'>
                         <option value='Employer'>Employer</option>
                         <option value='Potential Co-Worker'>Potential Co-Worker</option>
                         <option value='Secret Admirer'>Secret Admirer</option>
@@ -67,7 +94,7 @@
                         <br><input id='hired' type='radio' name='candidate'>He's hired!
                     </label><br>
                         What is your favorite thing about Aaron?<br>
-                    <select name='favorite'>
+                    <select class='dropdown' name='favorite'>
                         <option value='honesty'>His honesty</option>
                         <option value='integrity'>His integrity</option>
                         <option value='creativity'>His creativity</option>
@@ -77,7 +104,7 @@
                     <br><label for='Portfolio'><input id='portfolio' value='portfolio' type='checkbox' name='improve'> A better portfolio</label>
                     <br><label for='Projects'><input id='projects' value='projects' type='checkbox' name='improve'> More complex projects</label>   
                     <br><label for='Interview'><input id='interview' value='interview' type='checkbox' name='improve'> A better interview</label>
-                    <br><label for='Code'><input id='code' type='checkbox' name='improve'> Better code</label><br>
+                    <br><label for='Code'><input id='code' type='checkbox' name='improve'> Better code</label><br><br>
                         Any comments or suggestions?<br>
                     <label for='suggestions'>List your suggestions for Aaron here:</label><br>
                     <textarea id='suggestions' name='suggestions' rows='4' cols='50'>Don't hold back, help Aaron land a job!</textarea><br><br>
